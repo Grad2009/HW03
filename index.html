@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="reset.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Minesweeper</title>
+	<script src="controll.js"></script>
+	<script src="model.js"></script>
+	<script src="view.js"></script>
+	
+	<!-- подключаем стили Mocha, для отображения результатов -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.4.5/mocha.css">
+  <!-- подключаем библиотеку Mocha -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.4.5/mocha.js"></script>
+  <!-- настраиваем Mocha: предстоит BDD-тестирование -->
+  <script>
+    mocha.setup('bdd');
+  </script>
+
+  <!-- подключаем chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+  <!-- в chai есть много всего, выносим assert в глобальную область -->
+  <script>
+    var assert = chai.assert;
+  </script>
+</head>
+
+<body>
+	<input value="Start" id="start" type="button" class="button">
+	<span id="bombs"></span>
+	<div class="message" id="message"></div>
+
+	<div id="mocha"></div></div>
+	<script>
+    	mocha.setup('bdd');
+	</script>
+	<script>		
+    	mocha.run();
+ 	</script>	
+	
+</body>
+</html>
