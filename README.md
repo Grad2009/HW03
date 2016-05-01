@@ -1,4 +1,5 @@
 # HW03
+Miner
 
 Third task in "Professional javascript" course by TEAM International: Miner
 
